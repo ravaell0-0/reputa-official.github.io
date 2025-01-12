@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kontak</title>
+    <style>
+        :root {
+            --primary-color: #8E1616;
+            --secondary-color: #1D1616;
+            --white: #EEE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+        }
+
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 10%;
+            align-items: center;
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+        .logo {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+        }
+        .social-media, .email, .location {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .social-media a, .email a {
+            display: block;
+            margin: 10px 0;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        .social-media a:hover, .email a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;    
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="reputa.html" class="logo">REPUTA</a>
+        <div class="nav-links">
+            <a href="stuk.html">STRUCTURE</a>
+            <a href="reputa-documentation-minimal.html">DOCUMENTATION</a>
+            <a href="co.html">CONTACT</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <!-- Sosial Media -->
+        <div class="social-media">
+            <h2>Sosial Media</h2>
+            <a href="https://www.instagram.com/reputa.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@remajapuripermata?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+            <a href="https://youtube.com/@puripermatatv8431?si=DNvO63YAC4FAzUDP" target="_blank">YouTube</a>
+        </div>
+
+        <!-- Email -->
+        <div class="email">
+            <h2>Email</h2>
+            <a href="mailto:reputa.official@gmail.com">reputa.official@gmail.com</a>
+        </div>
+
+        <!-- Lokasi -->
+        <div class="location">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.5500381383822!2d106.7274629309591!3d-6.247288653930612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f09c746a6b6b%3A0x8088db8106a42ea1!2sCluster%20Puri%20Permata%20I!5e0!3m2!1sid!2sid!4v1736674467582!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>

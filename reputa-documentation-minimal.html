@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reputa - Documentation</title>
+    <style>
+        :root {
+            --primary-color: #8E1616;
+            --secondary-color: #1D1616;
+            --white: #EEE;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+        }
+
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 10%;
+            align-items: center;
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+        .logo {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 10%;
+        }
+
+        /* Card Styles */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            position: relative;
+            height: 200px;
+            background: #d3d3d3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .new-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #8B0000;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            background: #8B0000;
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: white;
+        }
+
+        .card-description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .card-link::before {
+            content: '> ';
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                padding: 1rem 5%;
+            }
+            
+            .gallery-container {
+                padding: 1rem 5%;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="reputa.html" class="logo">REPUTA</a>
+        <div class="nav-links">
+            <a href="stuk.html">STRUCTURE</a>
+            <a href="reputa-documentation-minimal.html">DOCUMENTATION</a>
+            <a href="co.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-image">
+                <span>FOTO</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">JUDUL</h2>
+                <p class="card-description">
+                    haahahhahahaahahah ahahhahahahhahaha hahhahaaahhhahahh
+                    ahahahaahhhahaaa ahahahahhhahahaha hhahahahahahahahah aahh
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-image">
+                <span>FOTO</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">JUDUL</h2>
+                <p class="card-description">
+                    haahahhahahaahahah ahahhahahahhahaha hahhahaaahhhahahh
+                    ahahahaahhhahaaa ahahahahhhahahaha hhahahahahahahahah aahh
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-image">
+                <span>FOTO</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">JUDUL</h2>
+                <p class="card-description">
+                    haahahhahahaahahah ahahhahahahhahaha hahhahaaahhhahahh
+                    ahahahaahhhahaaa ahahahahhhahahaha hhahahahahahahahah aahh
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-image">
+                <span>FOTO</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">JUDUL</h2>
+                <p class="card-description">
+                    haahahhahahaahahah ahahhahahahhahaha hahhahaaahhhahahh
+                    ahahahaahhhahaaa ahahahahhhahahaha hhahahahahahahahah aahh
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="card-image">
+                <span>FOTO</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">JUDUL</h2>
+                <p class="card-description">
+                    haahahhahahaahahah ahahhahahahhahaha hahhahaaahhhahahh
+                    ahahahaahhhahaaa ahahahahhhahahaha hhahahahahahahahah aahh
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <div class="card-image">
+                <span>FOTO</span>
+                <div class="new-badge">New</div>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">JUDUL</h2>
+                <p class="card-description">
+                    haahahhahahaahahah ahahhahahahhahaha hahhahaaahhhahahh
+                    ahahahaahhhahaaa ahahahahhhahahaha hhahahahahahahahah aahh
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+        
+
+
+        <!-- Add more cards as needed -->
+    </div>
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/reputa.official">@reputa.official</a>
+            <a href="https://youtube.com/PuripermataTV">PuripermataTV</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reputa - Structure</title>
+    <style>
+        :root {
+            --primary-color: #8E1616;
+            --yellow-bg: #fff9e6;
+            --red-bg: #ffe6e6;
+            --green-bg: #e6ffe6;
+            --blue-bg: #e6f2ff;
+            --purple-bg: #f2e6ff;
+            --white: #EEE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+        }
+
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 10%;
+            align-items: center;
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+        .logo {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .logo-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-item img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--white);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+          .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .stuk {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stuk img {
+            width: 170px;
+            height: 170px;
+            border: 2px solid var(--primary-color);
+            border-radius: 13px;
+            box-shadow: 0px 0px 0px 0px var(--primary-color);
+            cursor: pointer;
+            margin: 3px;
+            transition: 400ms;
+        }
+
+        div img:hover {
+            transform: scale(1.03);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-color);
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="reputa.html" class="logo">REPUTA</a>
+        <div class="nav-links">
+            <a href="stuk.html">STRUCTURE</a>
+            <a href="reputa-documentation-minimal.html">DOCUMENTATION</a>
+            <a href="co.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1></h1>
+    
+
+    <div class="stuk">
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="farel.jpg" alt="">
+    <img src="re.jpg" alt="">
+    <img src="revan.jpg" alt="">
+    <img src="8.jpg" alt="">
+    <img src="9.jpg" alt="">
+    <img src="10.jpg" alt="">
+    <img src="11.jpg" alt="">
+    <img src="12.jpg" alt="">
+    <img src="13.jpg" alt="">
+    <img src="14.jpg" alt="">
+    <img src="15.jpg" alt="">
+    <img src="16.jpg" alt="">
+    <img src="17.jpg" alt="">
+    <img src="18.jpg" alt="">
+    <img src="19.jpg" alt="">
+    <img src="20.jpg" alt="">
+    <img src="21.jpg" alt="">
+    <img src="23.jpg" alt="">
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/reputa.official">@reputa.official</a>
+            <a href="https://youtube.com/PuripermataTV">PuripermataTV</a>
+        </div>
+    </footer>
+</body>
+</html>
