@@ -163,19 +163,38 @@
   .stuk img {
     width: 100%;
     margin: 1px;
-    width: 150px;
-    height: 150px;
-    grid-template-columns: 3, 1fr;
+    width: 100px;
+    height: 100px;
+    grid-template-columns: 3, 3, 3;
   }
 }
 
-@media only screen and (min-width: 479px) {
+@media only screen and (mix-width: 479px) {
   .stuk img {
     width: 100%;
     margin: 1px;
     width: 100px;
     height: 100px;
     grid-template-columns: 3, 3, 3;
+  }
+}
+
+@media only screen and (mix-width: 405px) {
+  .stuk img {   
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    grid-template-columns: 3, 3, 3;
+    justify-content: center;
+    align-content: center;
+}
+}
+
+@media only screen and (mix-width: 405px) {
+  .container {
+    justify-content: center;
+    align-content: center;
+
   }
 }
 
