@@ -87,13 +87,47 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 50px;
-            background-color: var(--white);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    justify-items: center;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    justify-content: center;
+    justify-items: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    justify-content: center;
+    justify-items: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    justify-content: center;
+    justify-items: center;
+}
+
+tr:hover {
+    background-color: #ddd;
+    justify-content: center;
+    justify-items: center;
+}
         .org-text {
             flex: 1;
         }
@@ -174,6 +208,7 @@
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
+            flex-direction: column;
         }
 
         .social-links {
@@ -220,14 +255,16 @@
 
             .menu-icon {
                 display: block; /* Tampilkan ikon hamburger di mobile */
-
-             .gallery-container {
-                padding: 0.2rem 2%;
-                grid-template-columns: 1fr;
             }
-            }
-        }
 
+            .container {
+            max-width: 150px;
+            }
+
+            .table {
+            width: 100%;
+            }
+        
          .gallery-container {
                 padding: 0.2rem 2%;
                 grid-template-columns: 1fr;
@@ -311,6 +348,7 @@
         .card-link::before {
             content: '> ';
         }
+    }
 
     </style>
 </head>
@@ -328,60 +366,76 @@
     <main class="main-content">
         <section class="organization-section">
             <div class="org-text">
-                <h1>ORGANIZATION OF REPUTA</h1>
+                <h1></h1>
                 <p></p>
             </div>
-            <div class="org-logo">
-                <img src="Logo_Reputa_Fix_BANGET-01-removebg-preview.png"/>
-                </svg>
+            <div class="container">
+                <h1>Klasemen Liga Bulutangkis</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>TIM</th>
+                            <th>P</th>
+                            <th>M</th>
+                            <th>K</th>
+                            <th>GD</th>
+                            <th>PTS</th>
+                            <th>RNK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>RT01</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>-4</td>
+                            <th>0</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>RT02</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>-2</td>
+                            <th>0</th>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>RT03</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <th>6</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>RT04</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <th>3</th>  
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </section>
-    </main>
 
-        <section class="about-section">
-            <div class="about-text">
-                <h2 class="ab0">-ABOUT</h2>
-                <h2>REPUTA</h2>
-                <p>REPUTA atau Remaja Puri Permata 1 
-                adalah karangtaruna dan bertujuan untuk 
-                jadi wadah untuk remaja puri permata belajar 
-                mengenal sistem administratif serta mengenal
-                dunia organisasi dan reputa juga belajar
-                kolaboratif dengan dalam lingkup internal 
-                maupun eksternal</p>
-            </div>
-            <div class="about-image">
-                FOTO 1
-            </div>
-        </section>
-    </main>
-
-          <div class="gallery-container">
-        <!-- Card 1 -->
-            </div>
-            <div class="card-content">
-                <h2 class="card-title">SEBERTA</h2>
-                <p class="card-description">
-                    SEBERTA adalah program dari REPUTA yang dari singkatan Sehat Bersama REPUTA
-                </p>
-                <a href="#" class="card-link">ALL</a>
-            </div>
-        </div>
-
-        </section>
-        </main>
-
-    <footer class="footer">
-        <div class="social-links">
-            <a href="https://instagram.com/reputa.official">@reputa.official</a>
-            <a href="https://youtube.com/PuripermataTV">PuripermataTV</a>
-        </div>
-    </footer>
+            <div>
     <script>
         document.getElementById('menu-icon').addEventListener('click', function() {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('show'); // Tambah atau hapus kelas show
         });
     </script>
+    </div>
 </body>
 </html>
