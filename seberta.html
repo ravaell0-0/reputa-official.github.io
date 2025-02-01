@@ -81,126 +81,50 @@
 
         .organization-section {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column; /* Ubah menjadi kolom */
+            align-items: center; /* Pusatkan konten */
             margin-bottom: 4rem;
         }
 
         .container {
-    margin: auto;
-    padding: 20px;
-    border-radius: 8px;
-    justify-content: center;
-    justify-items: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    justify-content: center;
-    justify-items: center;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
-    justify-content: center;
-    justify-items: center;
-}
-
-th {
-    background-color: var(--primary-color);
-    color: white;
-    justify-content: center;
-    justify-items: center;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-    justify-content: center;
-    justify-items: center;
-}
-
-tr:hover {
-    background-color: #ddd;
-    justify-content: center;
-    justify-items: center;
-}
-        .org-text {
-            flex: 1;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            justify-content: center;
+            justify-items: center;
+            width: 100%; /* Pastikan lebar 100% */
+            max-width: 800px; /* Atur lebar maksimum */
         }
 
-        .org-logo {
-            flex: 1;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
             text-align: center;
+            border: 1px solid #ddd;
         }
 
-        .photo_6059989368082384152_x.jpg {
-            width: 300px;
-            height: auto;
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
         }
 
         h1 {
             color: var(--primary-color);
             font-size: 3rem;
             margin-bottom: 1rem;
-        }
-
-        /* About Section */
-        .about-section {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-            max-width: 1500px;
-            margin: 50px auto;
-            padding: 50px;
-            background-color: var(--white);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-section1 {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-            max-width: 1500px;
-            margin: 50px auto;
-            padding: 50px;
-            background-color: var(--white);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-text1 {
-            flex: 1;
-        }
-
-        h2 {
-            color: var(--secondary-color)
-        }   
-
-        .ab0 {
-            color: var(--primary-color)
-        }
-
-        .ab1 {
-            color: var(--primary-color)
-        }
-
-
-        .about-image {
-            flex: 1;
-            background-color: #ffffff;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            color: #666;
         }
 
         /* Footer */
@@ -223,19 +147,9 @@ tr:hover {
         }
 
         @media (max-width: 768px) {
-            .organization-section,
-            .about-section {
+            .organization-section {
                 flex-direction: column;
                 gap: 2rem;
-            }
-
-            .photo_6059989368082384152_x.jpg {
-                width: 200px;
-            }
-
-            .nav {
-                gap: 1rem;
-                font-weight: bold;
             }
 
             .nav-links {
@@ -256,100 +170,7 @@ tr:hover {
             .menu-icon {
                 display: block; /* Tampilkan ikon hamburger di mobile */
             }
-
-            .container {
-            max-width: 150px;
-            }
-
-            .table {
-            width: 100%;
-            }
-        
-         .gallery-container {
-                padding: 0.2rem 2%;
-                grid-template-columns: 1fr;
-            }
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
-        .card-image {
-            position: relative;
-            height: 200px;
-            background: #d3d3d3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .card-image span {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        }
-
-        .new-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #8B0000;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .card-content {
-            background: #8B0000;
-            color: white;
-            padding: 1.5rem;
-        }
-
-        .card-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        .card-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 40px;
-            height: 2px;
-            background: white;
-        }
-
-        .card-description {
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .card-link {
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            background: rgba(255,255,255,0.1);
-            padding: 8px 16px;
-            border-radius: 4px;
-        }
-
-        .card-link::before {
-            content: '> ';
-        }
-    }
-
     </style>
 </head>
 <body>
@@ -365,10 +186,6 @@ tr:hover {
 
     <main class="main-content">
         <section class="organization-section">
-            <div class="org-text">
-                <h1></h1>
-                <p></p>
-            </div>
             <div class="container">
                 <h1>Klasemen Liga Bulutangkis</h1>
                 <table>
@@ -428,14 +245,14 @@ tr:hover {
                     </tbody>
                 </table>
             </div>
+        </section>
+    </main>
 
-            <div>
     <script>
         document.getElementById('menu-icon').addEventListener('click', function() {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('show'); // Tambah atau hapus kelas show
         });
     </script>
-    </div>
 </body>
 </html>
