@@ -220,6 +220,11 @@
 
             .menu-icon {
                 display: block; /* Tampilkan ikon hamburger di mobile */
+
+             .gallery-container {
+                padding: 1rem 5%;
+                grid-template-columns: 1fr;
+            }
             }
         }
 
@@ -227,6 +232,85 @@
                 padding: 1rem 5%;
                 grid-template-columns: 1fr;
             }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            position: relative;
+            height: 200px;
+            background: #d3d3d3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .new-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #8B0000;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            background: #8B0000;
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: white;
+        }
+
+        .card-description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .card-link::before {
+            content: '> ';
+        }
 
     </style>
 </head>
