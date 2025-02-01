@@ -1,0 +1,387 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reputa Organization</title>
+    <style>
+        :root {
+            --primary-color: #8E1616;
+            --secondary-color: #1D1616;
+            --white: #EEE;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+        }
+
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 10%;
+            align-items: center;
+            background-color: var(--primary-color);
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-weight: bold;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 10%;
+        }
+
+        .organization-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .org-text {
+            flex: 1;
+        }
+
+        .org-logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .photo_6059989368082384152_x.jpg {
+            width: 300px;
+            height: auto;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* About Section */
+        .about-section {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            max-width: 1500px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-section1 {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            max-width: 1500px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: var(--white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text1 {
+            flex: 1;
+        }
+
+        h2 {
+            color: var(--secondary-color)
+        }   
+
+        .ab0 {
+            color: var(--primary-color)
+        }
+
+        .ab1 {
+            color: var(--primary-color)
+        }
+
+
+        .about-image {
+            flex: 1;
+            background-color: #ffffff;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #666;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .organization-section,
+            .about-section {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .photo_6059989368082384152_x.jpg {
+                width: 200px;
+            }
+
+            .nav {
+                gap: 1rem;
+                font-weight: bold;
+            }
+
+            .nav-links {
+                display: none; /* Sembunyikan menu di mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Sesuaikan dengan tinggi navbar */
+                left: 0;
+                background-color: var(--secondary-color);
+                width: 100%;
+                z-index: 1000;
+            }
+
+            .nav-links.show {
+                display: flex; /* Tampilkan menu saat diaktifkan */
+            }
+
+            .menu-icon {
+                display: block; /* Tampilkan ikon hamburger di mobile */
+
+             .gallery-container {
+                padding: 0.2rem 2%;
+                grid-template-columns: 1fr;
+            }
+            }
+        }
+
+         .gallery-container {
+                padding: 0.2rem 2%;
+                grid-template-columns: 1fr;
+            }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            position: relative;
+            height: 200px;
+            background: #d3d3d3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .new-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #8B0000;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            background: #8B0000;
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: white;
+        }
+
+        .card-description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .card-link::before {
+            content: '> ';
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="reputa.html" class="logo">REPUTA</a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+            <a href="stuk.html">STRUCTURE</a>
+            <a href="reputa-documentation-minimal.html">DOCUMENTATION</a>
+            <a href="co.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="organization-section">
+            <div class="org-text">
+                <h1>ORGANIZATION OF REPUTA</h1>
+                <p></p>
+            </div>
+            <div class="org-logo">
+                <img src="Logo_Reputa_Fix_BANGET-01-removebg-preview.png"/>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2 class="ab0">-ABOUT</h2>
+                <h2>REPUTA</h2>
+                <p>REPUTA atau Remaja Puri Permata 1 
+                adalah karangtaruna dan bertujuan untuk 
+                jadi wadah untuk remaja puri permata belajar 
+                mengenal sistem administratif serta mengenal
+                dunia organisasi dan reputa juga belajar
+                kolaboratif dengan dalam lingkup internal 
+                maupun eksternal</p>
+            </div>
+            <div class="about-image">
+                FOTO 1
+            </div>
+        </section>
+    </main>
+
+          <div class="gallery-container">
+        <!-- Card 1 -->
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">SEBERTA</h2>
+                <p class="card-description">
+                    SEBERTA adalah program dari REPUTA yang dari singkatan Sehat Bersama REPUTA
+                </p>
+                <a href="#" class="card-link">ALL</a>
+            </div>
+        </div>
+
+        </section>
+        </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/reputa.official">@reputa.official</a>
+            <a href="https://youtube.com/PuripermataTV">PuripermataTV</a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show'); // Tambah atau hapus kelas show
+        });
+    </script>
+</body>
+</html>
