@@ -54,7 +54,7 @@
         }
 
         .nav-links a {
-            color: var(--primary-color);
+            color: var(--white);
             text-decoration: none;
             font-weight: 500;
             padding: 0.5rem 1rem;
@@ -63,9 +63,15 @@
             font-weight: bold;
         }
 
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
         .nav-links a:hover {
-            background-color: var(--primary-color);
-            color: var(--white);
+            background-color: var(--white);
+            color: var(--primary-color);
         }
 
         /* Gallery Container */
@@ -159,11 +165,32 @@
         @media (max-width: 768px) {
             .nav {
                 padding: 1rem 5%;
+                gap: 1rem;
+                font-weight: bold;
             }
             
             .gallery-container {
                 padding: 1rem 5%;
                 grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Sembunyikan menu di mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Sesuaikan dengan tinggi navbar */
+                left: 0;
+                background-color: var(--secondary-color);
+                width: 100%;
+                z-index: 1000;
+            }
+
+            .nav-links.show {
+                display: flex; /* Tampilkan menu saat diaktifkan */
+            }
+
+            .menu-icon {
+                display: block; /* Tampilkan ikon hamburger di mobile */
             }
         }
 
@@ -190,7 +217,8 @@
 <body>
     <nav class="nav">
         <a href="reputa.html" class="logo">REPUTA</a>
-        <div class="nav-links">
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="nav-links" id="nav-links">
             <a href="stuk.html">STRUCTURE</a>
             <a href="reputa-documentation-minimal.html">DOCUMENTATION</a>
             <a href="co.html">CONTACT</a>
@@ -304,5 +332,11 @@
             <a href="https://youtube.com/PuripermataTV">PuripermataTV</a>
         </div>
     </footer>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show'); // Tambah atau hapus kelas show
+        });
+    </script>
 </body>
 </html>
